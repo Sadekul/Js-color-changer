@@ -1,0 +1,64 @@
+<html>
+<head>
+<style> 
+#myDIV {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    color: black;
+    text-align: center;
+}
+    
+    .color-btn, .color-btn2, .color-btn3,.color-btn4{
+        padding: 10px;
+        border: 0px;
+        border-radius: 50%;
+        float: right;
+        margin-right: 20px; 
+        outline: none;
+    }
+   .color-btn{
+        background-color: red;
+    }
+    .color-btn2{
+        background-color: blue;
+    }
+    .color-btn3{
+        background-color: green;
+    }
+    .color-btn4{
+        background-color: yellow;
+    }
+</style>
+</head>
+<body>
+<button class="color-btn" onclick="myFunction()"></button>
+<button class="color-btn2" onclick="myFunction2()"></button>
+<button class="color-btn3" onclick="myFunction3()"></button>
+<button class="color-btn4" onclick="myFunction4()"></button>
+
+
+<div id="myDIV">
+  <h1>Hello</h1>
+</div>
+
+<script>
+function myFunction() {
+    document.getElementById("myDIV").style.color = "red";
+}
+
+function myFunction2() {
+    document.getElementById("myDIV").style.color = "blue";
+}
+    
+function myFunction3() {
+    document.getElementById("myDIV").style.color = "green";
+}
+
+function myFunction4() {
+    document.getElementById("myDIV").style.color = "yellow";
+}
+</script>
+
+</body>
+</html>
